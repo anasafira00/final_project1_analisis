@@ -31,7 +31,7 @@ if selected_data == "Data Jam (Hourly)":
 
 else:
     # Data Harian
-    day_df = pd.read_csv("C:/Users/anasafira/pydicoding/day.csv")
+    day_df = pd.read_csv("https://raw.githubusercontent.com/anasafira00/final_project1_analisis/main/Bike-sharing-dataset/hour.csv")
     day_df['dteday'] = pd.to_datetime(day_df['dteday'])
 
     st.title("Data Harian (Daily)")
