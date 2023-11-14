@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Baca dataset
-hour_df = pd.read_csv("C:/Users/anasafira/pydicoding/hour.csv")
+hour_df = pd.read_csv("hour.csv")
 
 # Konversi kolom 'dteday' ke tipe data datetime
 hour_df['dteday'] = pd.to_datetime(hour_df['dteday'])
