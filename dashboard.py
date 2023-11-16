@@ -15,7 +15,6 @@ selected_data = st.sidebar.radio("Pilih Data:", ["Data Jam (Hourly)", "Data Hari
 # Visualisasi data jam atau harian
 if selected_data == "Data Jam (Hourly)":
     st.title("Data Jam (Hourly)")
-    st.dataframe(hour_df.head())
 
     # Visualisasi peminjaman per jam
     st.subheader("Grafik Peminjaman Sepeda per Jam")
@@ -35,7 +34,6 @@ else:
     day_df['dteday'] = pd.to_datetime(day_df['dteday'])
 
     st.title("Data Harian (Daily)")
-    st.dataframe(day_df.head())
 
     # Visualisasi peminjaman per hari
     st.subheader("Grafik Peminjaman Sepeda per Hari")
